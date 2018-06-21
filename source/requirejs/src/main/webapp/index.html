@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Mattdamon + RequireJS + Jquery + BootMetro(css)</title>
+
+<!-- import master js -->
+<script type="text/javascript" src="js/mattdamon.js"></script>
+
+<script type="text/javascript">
+	mattdamon.theme("theme-dark");
+	mattdamon.lib.requirejs("/require.js", function() {
+		requirejs.config({
+			baseUrl : "js/requirejs/" + version.requirejs,
+			paths : {
+				jQuery : "../../jquery/" + version.jQuery,
+				mattdamon : "../../mattdamon/" + version.mattdamon
+			},
+			config : {
+				i18n : {
+					locale : "en"
+				}
+			}
+		});
+		console.log("require.js completed");
+		require([ "mattdamon/segment/main" ], function() {
+			console.log("main.js completed");
+		})
+	});
+</script>
+
+</head>
+<body>
+	<div id="header-widget"></div>
+</body>
+</html>

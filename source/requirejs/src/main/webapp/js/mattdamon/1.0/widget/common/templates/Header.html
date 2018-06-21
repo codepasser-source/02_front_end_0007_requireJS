@@ -1,0 +1,54 @@
+<div>
+	<div id="nav-bar" class="container-fluid">
+		<div class="row-fluid">
+			<div class="span8">
+				<div id="header-container">
+					<a id="logoutButton" class="win-backbutton"
+						href="javascript:void(0);" title="${title_logout}"
+						style="display: none;"></a>
+					<h5>${title_app}</h5>
+					<div id="header-menu" class="dropdown"></div>
+				</div>
+			</div>
+			<div id="top-info" class="pull-right">
+				<a class="pull-left" href="javascript:void(0);">
+					<div class="top-info-block">
+						<h3 id="userInfo-surname"></h3>
+						<h4 id="userInfo-name"></h4>
+					</div>
+					<div class="top-info-block">
+						<b class="icon-user"></b>
+					</div>
+				</a>
+				<hr class="separator pull-left">
+				<a id="settings" class="pull-left" href="javascript:void(0);"
+					title="${title_settings}" style="display: none;"> <b
+					class="icon-settings"></b>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- setting -->
+	<div id="charms" class="win-ui-dark in" style="display: none;">
+		<div id="theme-charms-section" class="charms-section">
+			<div class="charms-header">
+				<a id="close-charms" class="close-charms win-command"
+					href="javascript:void(0);"> <span
+					class="win-commandimage win-commandring"></span>
+				</a>
+				<h2>${title_settings}</h2>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					<form class="">
+						<label for="win-theme-select">${title_changetheme}:</label> <select
+							id="win-theme-select" class="">
+							<option value="theme-light">Light</option>
+							<option value="theme-dark">Dark</option>
+						</select>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
